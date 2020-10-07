@@ -1,0 +1,33 @@
+body{
+  display: flex;
+  justify-content: center;
+  width:100vw;
+  height:10vh;
+}
+
+#mycanvas{
+  width: 400px;
+  height:300px;
+  	animation: 8s linear alternate infinite float;
+}
+
+#newCanvas{
+  width: 400px;
+  height:300px;
+  /* animation: 8s linear alternate infinite float; */
+}
+
+#oldCanvas{
+  width: 400px;
+  height:300px;
+  /* animation: 8s linear alternate infinite float; */
+}
+
+#myvideo{
+  visibility: hidden;
+}
+
+@keyframes float {
+	from { transform: translatex(100vw) translatey(-100vh); }
+	to { transform: translatex(-100vw) translatey(100vh); }
+}
